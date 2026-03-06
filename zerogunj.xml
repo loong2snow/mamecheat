@@ -1,6 +1,6 @@
 <mamecheat version="1">
 
-  <cheat desc="Select Starting Stage"> <comment>Max Stage 5 in Modes Asia/USA/Europe (Auto set to 4 if over 5)</comment>
+  <cheat desc="选择开始关卡"> <comment>在Asia/USA/Europe模式最大5关 (设置超过5自动锁定为4)</comment>
     <parameter min="1" max="10"/>
     <script state="run">
 	  <action condition="maincpu.pb@512946 == 00">maincpu.pb@512946=(param-1)</action>
@@ -8,62 +8,62 @@
     </script>
   </cheat>
   
-  <cheat desc="P1 Infinite Lockon Time">
+  <cheat desc="P1 无限锁定时间">
     <script state="run">
       <action>maincpu.pb@005126D4=D0</action>
     </script>
   </cheat>
   
-  <cheat desc="P1 Infinite Bombs">
+  <cheat desc="P1 无限炸弹">
     <script state="run">
       <action>maincpu.pb@00512664=04</action>
     </script>
   </cheat>
   
-  <cheat desc="P1 Infinite Lives">
+  <cheat desc="P1 无限生命">
     <script state="run">
       <action>maincpu.pb@00512662=03</action>
     </script>
   </cheat>
   
-  <cheat desc="P1 Max Power">
+  <cheat desc="P1 最大武器等级">
     <script state="run">
       <action>maincpu.pb@00512666=03</action>
     </script>
   </cheat>
   
-  <cheat desc="P1 Invincibility">
+  <cheat desc="P1 无敌[闪烁]">
     <script state="run">
       <action>maincpu.pb@005126C0=0F</action>
     </script>
   </cheat>
   
   
-  <cheat desc="P2 Infinite Lockon Time">
+  <cheat desc="P2 无限锁定时间">
     <script state="run">
       <action>maincpu.pb@00512764=D0</action>
     </script>
   </cheat>
   
-  <cheat desc="P2 Infinite Bombs">
+  <cheat desc="P2 无限炸弹">
     <script state="run">
       <action>maincpu.pb@005126F4=04</action>
     </script>
   </cheat>
   
-  <cheat desc="P2 Infinite Lives">
+  <cheat desc="P2 无限生命">
     <script state="run">
       <action>maincpu.pb@005126F2=03</action>
     </script>
   </cheat>  
   
-  <cheat desc="P2 Max Power">
+  <cheat desc="P2 最大武器等级">
     <script state="run">
       <action>maincpu.pb@005126F6=03</action>
     </script>
   </cheat>
   
-  <cheat desc="P2 Invincibility">
+  <cheat desc="P2 无敌[闪烁]">
     <script state="run">
       <action>maincpu.pb@00512750=0F</action>
     </script>

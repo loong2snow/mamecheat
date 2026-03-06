@@ -1,0 +1,155 @@
+<mamecheat version="1">
+  <cheat desc="无限投币数">
+    <script state="run">
+      <action>maincpu.pb@00109DED=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@00101F7D=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌">
+    <script state="run">
+      <action>maincpu.pb@00101F97=EF</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 总是有最大导弹">
+    <script state="run">
+      <action>maincpu.pb@00101F73=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 总是有最大激光">
+    <script state="run">
+      <action>maincpu.pb@00101F75=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 总是有最大炸弹">
+    <script state="run">
+      <action>maincpu.pb@00101F77=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 总是有最强防护罩">
+    <script state="run">
+      <action>maincpu.pb@00101F9D=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限防护罩">
+    <script state="run">
+      <action>maincpu.pb@00101F99=FF</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 快速攻击 (导弹)">
+    <script state="run">
+      <action>maincpu.pb@00101F8F=00</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 快速攻击 (炸弹)">
+    <script state="run">
+      <action>maincpu.pb@00101F91=00</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 方向选择">
+    <parameter>
+      <item value="0x00">右</item>
+      <item value="0xFF">左</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@00101F8A=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.pb@001023B3=00000009</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌">
+    <script state="run">
+      <action>maincpu.pb@001023CD=000000EF</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 总是有最大导弹">
+    <script state="run">
+      <action>maincpu.pb@001023A9=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 总是有最大激光">
+    <script state="run">
+      <action>maincpu.pb@001023AB=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 总是有最大炸弹">
+    <script state="run">
+      <action>maincpu.pb@001023AD=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 总是有最强防护罩">
+    <script state="run">
+      <action>maincpu.pb@001023D3=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限防护罩">
+    <script state="run">
+      <action>maincpu.pb@001023CF=FF</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 快速攻击 (导弹)">
+    <script state="run">
+      <action>maincpu.pb@001023C5=00</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 快速攻击 (炸弹)">
+    <script state="run">
+      <action>maincpu.pb@001023C7=00</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 方向选择">
+    <parameter>
+      <item value="0x00">右</item>
+      <item value="0xFF">左</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@001023C0=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+  
+  <cheat desc="声音检测计时停止">
+    <script state="run">
+      <action>maincpu.pb@0010155B=00000080</action>
+    </script>
+  </cheat>
+
+  <cheat desc="查看防护罩情况">
+    <script state="run">
+      <output format="防护: P1 %02X P2 %02X">
+        <argument>maincpu.pb@00101F99</argument>
+        <argument>maincpu.pb@001023CF</argument>
+      </output>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
