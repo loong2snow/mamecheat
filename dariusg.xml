@@ -1,0 +1,131 @@
+<mamecheat version="1">
+    <cheat desc="无限投币数">
+      <script state="run">
+        <action>maincpu.pb@00400091=09</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P1 无限生命">
+      <script state="run">
+        <action>maincpu.pb@0041B1DD=09</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P1 无限炸弹">
+      <script state="run">
+        <action>maincpu.pb@0041B1F1=05</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P1 无敌">
+      <script state="run">
+        <action>maincpu.pb@0041B1E1=05</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P1 最大射击火力">
+      <script state="run">
+        <action>maincpu.pb@0041B1E5=0D</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P1 总是有最大炸弹">
+      <script state="run">
+        <action>maincpu.pb@0041B1E7=23</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P1 总是有最强武器">
+      <script state="run">
+        <action>maincpu.pb@0041B1E9=0E</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P1 无限武器">
+      <script state="run">
+        <action>maincpu.pb@0041B1DF=FF</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P1 快速攻击">
+      <script state="run">
+        <action>maincpu.pb@00402224=10</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P2 无限生命">
+      <script state="run">
+        <action>maincpu.pb@0041B267=09</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P2 无限炸弹">
+      <script state="run">
+        <action>maincpu.pb@0041B27B=05</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P2 无敌">
+      <script state="run">
+        <action>maincpu.pb@0041B26B=05</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P2 最大射击火力">
+      <script state="run">
+        <action>maincpu.pb@0041B26F=0D</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P2 总是有最大炸弹">
+      <script state="run">
+        <action>maincpu.pb@0041B271=23</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P2 是有最强武器">
+      <script state="run">
+        <action>maincpu.pb@0041B273=0E</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P2 无限武器">
+      <script state="run">
+        <action>maincpu.pb@0041B269=FF</action>
+      </script>
+    </cheat>
+
+    <cheat desc="P2 快速攻击">
+      <script state="run">
+        <action>maincpu.pb@00402228=10</action>
+      </script>
+    </cheat>
+
+    <cheat desc="一击捕获">
+      <script state="run">
+        <action>maincpu.pb@00412971=01</action>
+      </script>
+    </cheat>
+	
+  <cheat desc=" "/>
+
+  <cheat desc="选择区域"> <comment>启用此作弊后，需要重置游戏（F3）才能生效。然后可能需要开启测试模式（F2），等待测试模式出现后，再次重置游戏（F3）.</comment>
+    <parameter>
+      <item value="0x01">日版</item>
+      <item value="0x02">美版</item>
+      <item value="0x03">世界版</item>
+    </parameter>
+    <script state="on">
+      <action>temp0 =maincpu.mb@1FFFFF</action>
+    </script>
+    <script state="run">
+      <action>maincpu.mb@1FFFFF=param</action>
+    </script>
+    <script state="off">
+      <action>maincpu.mb@1FFFFF=temp0 </action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
