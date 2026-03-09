@@ -1,0 +1,149 @@
+<mamecheat version="1">
+
+  <cheat desc="Infinite Credits">
+    <script state="run">
+      <action>maincpu.pb@23BD6D=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 Infinite Lives">
+    <script state="run">
+      <action>maincpu.pw@22A592=0005</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Infinite Bombs">
+    <script state="run">
+      <action>maincpu.pw@22A5C6=0007</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Invincibility">
+    <script state="run">
+      <action>maincpu.pw@22A55C=0003</action>
+    </script>
+  </cheat>
+
+
+  <cheat desc="P1 Always have Maximum Speed">
+    <script state="run">
+      <action>maincpu.pb@22A5B1=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Always have Max Shot Power">
+    <script state="run">
+      <action>maincpu.pb@22A5B3=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Infinite Weapon Time">
+    <script state="run">
+      <action>maincpu.pw@22A5BE=04B0</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Select Shot">
+    <parameter>
+      <item value="0x00">Windshot</item>
+      <item value="0x01">Growshot</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@22A5B7=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Select Weapon">
+    <parameter>
+      <item value="0x00">None</item>
+      <item value="0x01">F</item>
+      <item value="0x02">H</item>
+      <item value="0x03">L</item>
+      <item value="0x04">D</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@22A5BB=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Rapid Fire"> <comment>Turn it OFF on the name entry screen</comment>
+    <script state="run">
+      <action>maincpu.pb@23BDB7=00|(maincpu.pb@23BDB7 BAND ~10)</action>
+      <action>maincpu.pb@22A5C5=00</action>
+      <action>maincpu.pb@22A5BD=00</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 Infinite Lives">
+    <script state="run">
+      <action>maincpu.pw@22A682=0005</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Infinite Bombs">
+    <script state="run">
+      <action>maincpu.pw@22A6B6=0007</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Invincibility">
+    <script state="run">
+      <action>maincpu.pw@22A64C=0003</action>
+    </script>
+  </cheat>
+
+ <cheat desc="P2 Always have Maximum Speed">
+    <script state="run">
+      <action>maincpu.pb@22A6A1=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Always have Max Shot Power">
+    <script state="run">
+      <action>maincpu.pb@22A6A3=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Infinite Weapons Time">
+    <script state="run">
+      <action>maincpu.pw@22A6AE=04B0</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Select Shot">
+    <parameter>
+      <item value="0x00">Windshot</item>
+      <item value="0x01">Growshot</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@22A6A7=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Select Weapon">
+    <parameter>
+      <item value="0x00">None</item>
+      <item value="0x01">F</item>
+      <item value="0x02">H</item>
+      <item value="0x03">L</item>
+      <item value="0x04">D</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@22A6AB=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Rapid Fire"> <comment>Turn it OFF on the name entry screen</comment>
+    <script state="run">
+      <action>maincpu.pb@23BDBF=00|(maincpu.pb@23BDBF BAND ~10)</action>
+      <action>maincpu.pb@22A6B5=00</action>
+      <action>maincpu.pb@22A6AD=00</action>
+    </script>
+  </cheat>
+  
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
