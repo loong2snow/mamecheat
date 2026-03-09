@@ -1,0 +1,194 @@
+<mamecheat version="1">
+
+  <cheat desc="无限时间">
+    <script state="run">
+      <action>maincpu.pb@FF0ECD=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择开始的任务">
+    <parameter>
+      <item value="0x00">Mission 1</item>
+      <item value="0x01">Mission 2</item>
+      <item value="0x02">Mission 3</item>
+      <item value="0x03">Mission 4</item>
+      <item value="0x04">Mission 5</item>
+      <item value="0x05">Mission 6</item>
+      <item value="0x06">Final Mission</item>
+    </parameter>
+    <script state="run">
+      <action condition="(maincpu.pb@FF0B83 == FF) AND (maincpu.pb@FF0E8B == 00)">maincpu.pb@FF0E8B=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限血">
+    <script state="run">
+      <action>maincpu.pb@FF1175=30</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌">
+    <script state="run">
+      <action>maincpu.pb@FF1190=59</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限导弹">
+    <script state="run">
+      <action>maincpu.pb@FF117C=99</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 武器类型">
+    <parameter>
+      <item value="0x00">突击步枪</item>
+      <item value="0x01">燃烧喷射器</item>
+      <item value="0x02">散弹发射器</item>
+      <item value="0x03">手榴弹发射器</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@FF1185=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 武器等级">
+    <parameter>
+      <item value="0x00">1</item>
+      <item value="0x01">2</item>
+      <item value="0x02">3</item>
+      <item value="0x03">4</item>
+      <item value="0x04">5</item>
+      <item value="0x05">6</item>
+      <item value="0x06">7</item>
+      <item value="0x07">8</item>
+      <item value="0x08">9</item>
+      <item value="0x09">10</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@FF1188=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 没有射程限制">
+    <script state="run">
+      <action>maincpu.pb@ff1386=FF</action>
+      <action>maincpu.pb@ff13c6=FF</action>
+      <action>maincpu.pb@ff1406=FF</action>
+      <action>maincpu.pb@ff1446=FF</action>
+      <action>maincpu.pb@ff1486=FF</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限血">
+    <script state="run">
+      <action>maincpu.pb@FF1225=30</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌">
+    <script state="run">
+      <action>maincpu.pb@FF1240=59</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限导弹">
+    <script state="run">
+      <action>maincpu.pb@FF122C=99</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 武器类型">
+    <parameter>
+      <item value="0x00">突击步枪</item>
+      <item value="0x01">燃烧喷射器</item>
+      <item value="0x02">散弹发射器</item>
+      <item value="0x03">手榴弹发射器</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@FF1235=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 武器等级">
+    <parameter>
+      <item value="0x00">1</item>
+      <item value="0x01">2</item>
+      <item value="0x02">3</item>
+      <item value="0x03">4</item>
+      <item value="0x04">5</item>
+      <item value="0x05">6</item>
+      <item value="0x06">7</item>
+      <item value="0x07">8</item>
+      <item value="0x08">9</item>
+      <item value="0x09">10</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@FF1238=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P3 无限血">
+    <script state="run">
+      <action>maincpu.pb@FF12D5=30</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P3 无敌">
+    <script state="run">
+      <action>maincpu.pb@FF12F0=59</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P3 无限导弹">
+    <script state="run">
+      <action>maincpu.pb@FF12DC=99</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P3 武器类型">
+    <parameter>
+      <item value="0x00">突击步枪</item>
+      <item value="0x01">燃烧喷射器</item>
+      <item value="0x02">散弹发射器</item>
+      <item value="0x03">手榴弹发射器</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@FF12E5=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P3 武器等级">
+    <parameter>
+      <item value="0x00">1</item>
+      <item value="0x01">2</item>
+      <item value="0x02">3</item>
+      <item value="0x03">4</item>
+      <item value="0x04">5</item>
+      <item value="0x05">6</item>
+      <item value="0x06">7</item>
+      <item value="0x07">8</item>
+      <item value="0x08">9</item>
+      <item value="0x09">10</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@FF12E8=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="音乐测试">
+    <parameter min="1" max="255" step="1"/>
+    <script state="change">
+      <action>maincpu.pb@800181=param</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
