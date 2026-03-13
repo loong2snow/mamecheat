@@ -1,0 +1,200 @@
+<mamecheat version="1">
+
+  <cheat desc="选择隐藏角色">
+    <parameter>
+      <item value="0xFF">开启</item>
+      <item value="0x00">关闭</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@10A6A7=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="总有 10000 分奖励">
+    <script state="run">
+      <action>maincpu.pb@109CB8=24</action>
+    </script>
+  </cheat>
+
+  <cheat desc="查看游戏难度段位">
+    <script state="run">
+      <output format="难度段位 : %d">
+        <argument>maincpu.pb@(10C9D3)</argument>
+      </output>
+    </script>
+  </cheat>
+
+  <cheat desc="始终保持最低难度段位">
+    <script state="run">
+      <action>maincpu.pd@10C9D2=00F00000</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择游戏模式">
+    <comment>请在进入选择玩家画面前启用.</comment>
+    <parameter>
+      <item value="0x04">扩展模式</item>
+      <item value="0x02">高难度模式</item>
+      <item value="0x00">关卡编辑模式</item>
+      <item value="0x06">特殊模式</item>
+    </parameter>
+    <script state="on">
+      <action>temp0=maincpu.pb@10CA0F</action>
+    </script>
+    <script state="run">
+      <action condition="(maincpu.pb@10A6B0 == 00)">maincpu.pb@10A6B0=param</action>
+      <action condition="(param == 00) OR (param == 06)">maincpu.pb@10CA0F=FF</action>
+    </script>
+    <script state="off">
+      <action>maincpu.pb@10CA0F=temp0</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@101686=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@101682=04</action>
+      <action>maincpu.pb@101684=28</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌">
+    <script state="run">
+      <action>maincpu.pb@101688=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 最大火力">
+    <script state="run">
+      <action>maincpu.pb@101680=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 炸弹永远在爆炸">
+    <comment>在使用 Gain, Chitta, 和 Bornnam 时有效.</comment>
+    <script state="run">
+      <action>maincpu.pb@001025EB=01</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 选择副机攻击方式">
+    <parameter>
+      <item value="0x00">机翼侧固定聚集</item>
+      <item value="0x02">尾部固定</item>
+      <item value="0x04">前方固定</item>
+      <item value="0x06">旋转多方向</item>
+      <item value="0x08">随主机随意拖拉</item>
+      <item value="0x0A">机翼侧固定跟踪</item>
+      <item value="0x0C">随主机十字拖拉</item>
+      <item value="0x0E">脱离主机跟踪</item>
+      <item value="0x10">旋转直射</item>
+      <item value="0x12">机翼侧固定分散</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@001015BB=param</action>
+    </script>
+  </cheat>
+
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.pb@10177E=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@10177A=04</action>
+      <action>maincpu.pb@10177C=28</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌">
+    <script state="run">
+      <action>maincpu.pb@101780=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 最大火力">
+    <script state="run">
+      <action>maincpu.pb@101778=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 炸弹永远在爆炸">
+    <comment>在使用 Gain, Chitta, 和 Bornnam 时有效.</comment>
+    <script state="run">
+      <action>maincpu.pb@0010344B=01</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 选择副机攻击方式">
+    <parameter>
+      <item value="0x00">机翼侧固定聚集</item>
+      <item value="0x02">尾部固定</item>
+      <item value="0x04">前方固定</item>
+      <item value="0x06">旋转多方向</item>
+      <item value="0x08">随主机随意拖拉</item>
+      <item value="0x0A">机翼侧固定跟踪</item>
+      <item value="0x0C">随主机十字拖拉</item>
+      <item value="0x0E">脱离主机跟踪</item>
+      <item value="0x10">旋转直射</item>
+      <item value="0x12">机翼侧固定分散</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@001016B3=param</action>
+    </script>
+  </cheat>
+
+  <!--
+  <cheat desc=" "/>
+  
+  <cheat desc="选择其它角色">
+   <comment>与选择隐藏角色功能相同</comment>
+      <script state="run">
+        <action>maincpu.pb@0010008E=40</action>
+        <action>maincpu.pb@0010008F=20</action>
+        <action>maincpu.pb@00100090=10</action>
+        <action>maincpu.pb@00100091=08</action>
+        <action>maincpu.pb@00100092=04</action>
+        <action>maincpu.pb@00100093=08</action>
+        <action>maincpu.pb@00100094=04</action>
+        <action>maincpu.pb@00100095=02</action>
+        <action>maincpu.pb@00100096=02</action>
+        <action>maincpu.pb@00100097=01</action>
+        <action>maincpu.pb@00100098=01</action>
+        <action>maincpu.pb@00100099=00</action>
+      </script>
+    </cheat>
+-->
+  <cheat desc=" "/>
+
+  <cheat desc="选择区域">
+    <comment>启用并重启游戏后生效.</comment>
+    <parameter>
+      <item value="0x00">亚洲</item>
+      <item value="0x01">美国</item>
+      <item value="0x02">欧洲</item>
+    </parameter>
+    <script state="on">
+      <action>temp0 =maincpu.mb@000000</action>
+    </script>
+    <script state="run">
+      <action>maincpu.mb@000000=param</action>
+    </script>
+    <script state="off">
+      <action>maincpu.mb@000000=temp0</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
