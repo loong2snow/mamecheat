@@ -1,0 +1,109 @@
+<mamecheat version="1">
+
+  <cheat desc="Infinite Credits">
+    <script state="run">
+      <action>maincpu.pb@F9003=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="Select starting round">
+    <parameter min="1" max="7" step="1"/>
+    <script state="run">
+      <action condition="(maincpu.pb@F9021==00)">maincpu.pb@F9021=(param-1)</action>
+    </script>
+  </cheat>
+
+  <cheat desc="Select next Round">
+    <parameter min="1" max="7" step="1"/>
+    <script state="change">
+      <action>maincpu.pb@F9021=(param-1)</action>
+    </script>
+  </cheat>
+
+  <cheat desc="Invincibility">
+    <script state="on">
+      <action>temp0 =maincpu.mw@0759C</action>
+      <action>temp1 =maincpu.mb@075A4</action>
+      <action>temp2 =maincpu.mw@07C72</action>
+      <action>temp3 =maincpu.mb@07C7A</action>
+    </script>
+    <script state="run">
+      <action>maincpu.mw@0759C=08F9</action>
+      <action>maincpu.mb@075A4=60</action>
+      <action>maincpu.mw@07C72=08F9</action>
+      <action>maincpu.mb@07C7A=60</action>
+    </script>
+    <script state="off">
+      <action>maincpu.mw@0759C=temp0 </action>
+      <action>maincpu.mb@075A4=temp1 </action>
+      <action>maincpu.mw@07C72=temp2 </action>
+      <action>maincpu.mb@07C7A=temp3 </action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 Infinite Lives">
+    <script state="run">
+      <action>maincpu.pb@F6429=0A</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Infinite Bombs">
+    <script state="run">
+      <action>maincpu.pb@F642F=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Maximum Fire Power">
+    <script state="run">
+      <action>maincpu.pb@F647F=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 Select Weapon">
+    <parameter>
+      <item value="0x00">Fighter Shot</item>
+      <item value="0x01">Gerwalk Shot</item>
+      <item value="0x02">Battroid Shot</item>
+      <item value="0x03">Amord-V Shot</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@F6457=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 Infinite Lives">
+    <script state="run">
+      <action>maincpu.pb@F6529=0A</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Infinite Bombs">
+    <script state="run">
+      <action>maincpu.pb@F652F=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Maximum Fire Power">
+    <script state="run">
+      <action>maincpu.pb@F657F=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 Select Weapon">
+    <parameter>
+      <item value="0x00">Fighter Shot</item>
+      <item value="0x01">Gerwalk Shot</item>
+      <item value="0x02">Battroid Shot</item>
+      <item value="0x03">Armord-V Shot</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@F6557=param</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
