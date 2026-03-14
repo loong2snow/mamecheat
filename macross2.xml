@@ -1,0 +1,94 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.pb@1F900D=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无限时间">
+    <script state="run">
+      <action>maincpu.pb@1F9027=78</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择下一关">
+    <parameter min="1" max="9" step="1"/>
+    <script state="change">
+      <action>maincpu.pb@1F9021=(param-1)</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@1F5F2F=08</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌">
+    <script state="run">
+      <action>maincpu.pb@1F5F2D=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 主武器选择">
+    <parameter>
+      <item value="0x01">G</item>
+      <item value="0x02">F</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@001F5F33=param</action>
+      <action>maincpu.pb@001F5F31=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 副武器选择">
+    <parameter>
+      <item value="0x00">火箭</item>
+      <item value="0x01">导弹</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@001F5F37=param</action>
+      <action>maincpu.pb@001F5F35=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@1F5E2F=08</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌">
+    <script state="run">
+      <action>maincpu.pb@1F5E2D=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 主武器选择">
+    <parameter>
+      <item value="0x01">G</item>
+      <item value="0x02">F</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@001F5E33=param</action>
+      <action>maincpu.pb@001F5E31=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 副武器选择">
+    <parameter>
+      <item value="0x00">火箭</item>
+      <item value="0x01">导弹</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@001F5E37=param</action>
+      <action>maincpu.pb@001F5E35=03</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
