@@ -1,0 +1,120 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.pb@F16FB1=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择开始区域">
+    <parameter min="1" max="7" step="1"/>
+    <script state="run">
+      <action condition="(maincpu.pb@F17003==00)">maincpu.pb@F17003=(param-1)</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@F173C1=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@F173C3=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌">
+    <script state="run">
+      <action>maincpu.pb@F07183=0D</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 选择战船">
+    <parameter>
+      <item value="0x00">战斗机</item>
+      <item value="0x01">半机器人</item>
+      <item value="0x02">完全机器人</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@F173BF=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 最大火力">
+    <script state="run">
+      <action>maincpu.pb@F173CB=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 即时导弹">
+    <comment>绑定一个按键</comment>
+    <script state="on">
+      <action>maincpu.pb@F16177=50</action>
+      <action>maincpu.pb@F173DD=60</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 快速连射">
+    <script state="run">
+      <action>maincpu.pb@00F1696D=00</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.pb@F175C1=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@F175C3=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌">
+    <script state="run">
+      <action>maincpu.pb@F07187=0D</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 选择战船">
+    <parameter>
+      <item value="0x00">战斗机</item>
+      <item value="0x01">半机器人</item>
+      <item value="0x02">完全机器人</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@F175BF=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 最大火力">
+    <script state="run">
+      <action>maincpu.pb@F175CB=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 即时导弹">
+    <comment>绑定一个按键</comment>
+    <script state="on">
+      <action>maincpu.pb@F16377=50</action>
+      <action>maincpu.pb@F175DD=60</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 快速连射">
+    <script state="run">
+      <action>maincpu.pb@00F16B6D=00</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
