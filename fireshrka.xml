@@ -1,0 +1,72 @@
+<mamecheat version="1">
+
+  <cheat desc="无限生命">
+    <script state="run">
+      <action>maincpu.pb@C1EA7=0A</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@C16E9=08</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无敌">
+   <comment>查看DIP开关菜单以开启另一种无敌模式.</comment>
+    <script state="on">
+      <action>temp0 =maincpu.mb@022EE</action>
+	  <action>temp1 =maincpu.mw@02492</action>
+    </script>
+    <script state="run">
+      <action>maincpu.mb@022EE=60</action>
+      <action>maincpu.mw@02492=4E71</action> <!-- Pt 1 bullets, Pt 2 planes -->
+    </script>
+	<script state="off">
+      <action>maincpu.mb@022EE=temp0 </action>
+	  <action>maincpu.mw@02492=temp1 </action>
+    </script>
+  </cheat>
+  
+  <cheat desc=" "/>
+
+  <cheat desc="P1 最大火力">
+    <script state="run">
+      <action>maincpu.pb@C1EBD=03</action>
+      <action>maincpu.pb@C16E7=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 选择武器">
+    <parameter>
+      <item value="0x00">普通</item>
+      <item value="0x08">激光</item>
+      <item value="0x10">火焰</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@C16E3=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 最大火力">
+    <script state="run">
+      <action>maincpu.pb@C1EBF=03</action>
+      <action>maincpu.pb@C1747=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 选择武器">
+    <parameter>
+      <item value="0x00">普通</item>
+      <item value="0x08">激光</item>
+      <item value="0x10">火焰</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@C1743=param</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
