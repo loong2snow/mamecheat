@@ -1,0 +1,155 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.pb@0208C=63</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择起始关卡">
+    <parameter>
+      <item value="0x01">关卡 1</item>
+      <item value="0x02">关卡 2</item>
+      <item value="0x03">关卡 3</item>
+      <item value="0x04">关卡 4</item>
+      <item value="0x05">关卡 5</item>
+      <item value="0x06">关卡 6</item>
+      <item value="0x07">关卡 7</item>
+      <item value="0x08">关卡 8</item>
+    </parameter>
+    <script state="run">
+      <action condition="(param==01) AND (maincpu.pb@020A2==00)">maincpu.pb@020A2=00</action>
+      <action condition="(param==01) AND (maincpu.pb@020A4==00)">maincpu.pb@020A4=00</action>
+      <action condition="(param==02) AND (maincpu.pb@020A2==00)">maincpu.pb@020A2=01</action>
+      <action condition="(param==02) AND (maincpu.pb@020A4==00)">maincpu.pb@020A4=01</action>
+      <action condition="(param==03) AND (maincpu.pb@020A2==00)">maincpu.pb@020A2=02</action>
+      <action condition="(param==03) AND (maincpu.pb@020A4==00)">maincpu.pb@020A4=02</action>
+      <action condition="(param==04) AND (maincpu.pb@020A2==00)">maincpu.pb@020A2=04</action>
+      <action condition="(param==04) AND (maincpu.pb@020A4==00)">maincpu.pb@020A4=03</action>
+      <action condition="(param==05) AND (maincpu.pb@020A2==00)">maincpu.pb@020A2=05</action>
+      <action condition="(param==05) AND (maincpu.pb@020A4==00)">maincpu.pb@020A4=04</action>
+      <action condition="(param==06) AND (maincpu.pb@020A2==00)">maincpu.pb@020A2=06</action>
+      <action condition="(param==06) AND (maincpu.pb@020A4==00)">maincpu.pb@020A4=05</action>
+      <action condition="(param==07) AND (maincpu.pb@020A2==00)">maincpu.pb@020A2=08</action>
+      <action condition="(param==07) AND (maincpu.pb@020A4==00)">maincpu.pb@020A4=06</action>
+      <action condition="(param==08) AND (maincpu.pb@020A2==00)">maincpu.pb@020A2=09</action>
+      <action condition="(param==08) AND (maincpu.pb@020A4==00)">maincpu.pb@020A4=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无限生命">
+    <script state="run">
+      <action>maincpu.pb@02098=FF</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无限POW">
+    <script state="run">
+      <action>maincpu.pb@0580C=09|(maincpu.pb@0580C BAND ~0F)</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无敌">
+    <script state="on">
+      <action>temp0 =maincpu.mb@2213</action>
+      <action>temp1 =maincpu.mb@25F8</action>
+      <action>temp2 =maincpu.mb@2677</action>
+    </script>
+    <script state="run">
+      <action>maincpu.mb@2213=60</action>
+      <action>maincpu.mb@25F8=60</action> <!-- 1st = Enemy, 2nd = Fire -->
+      <action>maincpu.mb@2677=60</action> <!-- Missile in 3D scene -->
+    </script>
+    <script state="off">
+      <action>maincpu.mb@2213=temp0 </action>
+      <action>maincpu.mb@25F8=temp1 </action>
+      <action>maincpu.mb@2677=temp2 </action>
+    </script>
+  </cheat>
+
+  <cheat desc="快速射击 - 对空"> <comment>需要在姓名输入画面关闭</comment>
+    <script state="run">
+      <action>maincpu.pb@02033=00|(maincpu.pb@02033 BAND ~10)</action>
+    </script>
+  </cheat>
+
+  <cheat desc="快速射击 - 对地"> <comment>需要在姓名输入画面关闭</comment>
+    <script state="run">
+      <action>maincpu.pb@02033=00|(maincpu.pb@02033 BAND ~20)</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择强化">
+    <parameter>
+      <item value="0x01">炸弹 1</item>
+      <item value="0x02">炸弹 2</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@0558E=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="始终拥有僚机">
+    <script state="run">
+      <action>maincpu.pb@0558C=01</action>
+    </script>
+  </cheat>
+
+  <cheat desc="立即拥有僚机!">
+    <script state="on">
+      <action>maincpu.pb@0558C=01</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择自机武器">
+    <parameter>
+      <item value="0x00">普通</item>
+      <item value="0x01">火神炮</item>
+      <item value="0x02">三方向</item>
+      <item value="0x04">三路飞弹</item>
+      <item value="0x05">激光射击</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@0558D=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择僚机武器">
+    <parameter>
+      <item value="0x00">普通</item>
+      <item value="0x01">火神炮</item>
+      <item value="0x02">三方向</item>
+      <item value="0x04">三路飞弹</item>
+      <item value="0x05">激光</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@055ED=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="立即自毁战机!">
+    <script state="on">
+      <action>maincpu.pb@05809=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="声音测试计时停"> <comment>[P1 射击键1]下一个编码</comment>
+    <script state="run">
+      <action>maincpu.pb@02809=F0</action>
+    </script>
+  </cheat>
+
+  <cheat desc="声音测试">
+    <parameter min="1" max="146" step="1"/>
+    <script state="change">
+      <action>maincpu.pb@2198=param</action>
+      <action>maincpu.pw@2012=2198</action>
+      <action>maincpu.pw@2010=2199</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
