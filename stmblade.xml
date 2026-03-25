@@ -1,0 +1,75 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.pb@001C=09</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="无敌">
+    <script state="on">
+      <action>temp0 =maincpu.rw@F0F17E</action>
+    </script>
+    <script state="run">
+      <action>maincpu.rw@F0F17E=0E74</action>
+    </script>
+	<script state="off">
+      <action>temp0 =maincpu.rw@F0F17E</action>
+    </script>
+  </cheat>
+  
+  <cheat desc=" "/>
+	
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@0176=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@0188=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 最大火力">
+    <script state="run">
+      <action>maincpu.pb@0175=03</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="P1 无敌[闪烁]">
+    <script state="run">
+      <action>maincpu.pb@017C=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.pb@01B6=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@01C8=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 最大火力">
+    <script state="run">
+      <action>maincpu.pb@01B5=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌 [闪烁]">
+    <script state="run">
+      <action>maincpu.pb@01BC=02</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
