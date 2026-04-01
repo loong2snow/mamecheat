@@ -1,0 +1,124 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.pb@2E9C=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无敌">
+    <script state="on">
+      <action>temp0=maincpu.rw@F0E8B3</action>
+	  <action>temp1=maincpu.rw@F0E08A</action>
+	  <action>temp2=maincpu.rw@F09C61</action>
+    </script>
+    <script state="run">
+      <action>maincpu.rw@F0E8B3=0874</action>
+	  <action>maincpu.rw@F0E08A=0874</action>
+      <action>maincpu.rw@F09C61=00F4</action>
+    </script>
+	<script state="off">
+      <action>maincpu.rw@F0E8B3=temp0</action>
+	  <action>maincpu.rw@F0E08A=temp1</action>
+	  <action>maincpu.rw@F09C61=temp2</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="选择开始/当前关卡"> <comment>在角色选择画面启用！良好结局的条件如下 - 在不续关的情况下通关第5关，或在续关的情况下通关第5关超过10次，或在第5关中斩杀所有武将。</comment>
+    <parameter min="1" max="6" step="1"/>
+    <script state="change">
+      <action>maincpu.pb@2EB2=(param-1)</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@0C4A=06</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@0C4B=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌[闪烁]">
+    <script state="run">
+      <action>maincpu.pb@0C52=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 选择射击威力">
+    <parameter>
+      <item value="0x04">最大威力 1</item>
+      <item value="0x09">最大威力 2</item>
+      <item value="0x0E">最大威力 3</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@0C4E=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 总有最大斩击">
+    <script state="run">
+      <action>maincpu.pb@0C98=27</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 总有婆裟罗模式">
+    <script state="run">
+      <action>maincpu.pb@2EE2=FF</action>
+      <action>maincpu.pb@2EE6=6A</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.pb@0CC2=06</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@0CC3=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌[闪烁]">
+    <script state="run">
+      <action>maincpu.pb@0CCA=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 选择射击威力">
+    <parameter>
+      <item value="0x04">最大威力 1</item>
+      <item value="0x09">最大威力 2</item>
+      <item value="0x0E">最大威力 3</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@0CC6=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 总有最大斩击">
+    <script state="run">
+      <action>maincpu.pb@0D10=27</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 总有婆裟罗模式">
+    <script state="run">
+      <action>maincpu.pb@2EE4=FF</action>
+      <action>maincpu.pb@2EE8=6A</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
