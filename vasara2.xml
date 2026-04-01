@@ -1,0 +1,120 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.pb@58CC=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无敌">
+    <script state="on">
+      <action>temp0=maincpu.rw@F0A1F5</action>
+    </script>
+    <script state="run">
+      <action>maincpu.rw@F0A1F5=1875</action>
+    </script>
+	<script state="off">
+      <action>maincpu.rw@F0A1F5=temp0</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="选择开始关卡"> <comment>在 "难度选择" 页面启用此作弊——如果你选择大于6的数值，你将覆盖简单难度设置</comment>
+    <parameter min="1" max="12" step="1"/>
+    <script state="change">
+      <action>maincpu.pb@58E2=(param-1)</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@0E50=06</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@0E51=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 最大火力">
+    <script state="run">
+      <action>maincpu.pb@0E54=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌[闪烁]">
+    <script state="run">
+      <action condition="(maincpu.pb@0E58 LT 02) OR (maincpu.pb@0E58 GT FF)">maincpu.pb@0E58=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 总有最大斩击">
+    <script state="run">
+      <action>maincpu.pw@0E9B=03E7</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 角色选择"> <comment>在角色选择画面使用</comment>
+    <parameter>
+      <item value="0x01">武田信胜</item>
+      <item value="0x02">百地三太夫</item>
+      <item value="0x03">清泷坊</item>
+      <item value="0x04">明智光秀</item>
+      <item value="0x05">雑贺孙一</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@0FC9=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.pb@0ED3=06</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@0ED4=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 最大火力">
+    <script state="run">
+      <action>maincpu.pb@0ED7=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌[闪烁]">
+    <script state="run">
+      <action condition="(maincpu.pb@0EDB LT 02) OR (maincpu.pb@0EDB GT FF)">maincpu.pb@0EDB=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 总有最大斩击">
+    <script state="run">
+      <action>maincpu.pw@0F1E=03E7</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 角色选择"> <comment>在角色选择画面使用</comment>
+    <parameter>
+      <item value="0x01">武田信胜</item>
+      <item value="0x02">百地三太夫</item>
+      <item value="0x03">清泷坊</item>
+      <item value="0x04">明智光秀</item>
+      <item value="0x05">雑贺孙一</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@0FCB=param</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
