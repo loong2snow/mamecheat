@@ -1,0 +1,150 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.rb@F9019=63</action>
+    </script>
+  </cheat>
+
+  <cheat desc="全屏攻击">
+    <script state="on">
+      <action>temp0 =maincpu.mw@03BD0</action>
+      <action>temp1 =maincpu.mw@03BE4</action>
+      <action>temp2 =maincpu.mw@03BFA</action>
+      <action>temp3 =maincpu.mw@03C84</action>
+      <action>temp4 =maincpu.mw@03C9A</action>
+      <action>temp5 =maincpu.mw@03CBE</action>
+    </script>
+    <script state="run">
+      <action>maincpu.mw@03BD0=4E71</action> <!-- This ROM cheat was made by nolberto82 -->
+      <action>maincpu.mw@03BE4=4E71</action>
+      <action>maincpu.mw@03BFA=6026</action>
+      <action>maincpu.mw@03C84=6002</action>
+      <action>maincpu.mw@03C9A=6002</action>
+      <action>maincpu.mw@03CBE=6064</action>
+    </script>
+    <script state="off">
+      <action>maincpu.mw@03BD0=temp0 </action>
+      <action>maincpu.mw@03BE4=temp1 </action>
+      <action>maincpu.mw@03BFA=temp2 </action>
+      <action>maincpu.mw@03C84=temp3 </action>
+      <action>maincpu.mw@03C9A=temp4 </action>
+      <action>maincpu.mw@03CBE=temp5 </action>
+    </script>
+  </cheat>
+  
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.rb@F7751=0A</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌">
+    <comment>在战机出现在画面后启用此作弊。如遇到问题，请在关卡结束时将其关闭</comment>
+    <script state="run">
+      <action>maincpu.rb@F7749=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 最大对空武器火力">
+    <script state="run">
+      <action>maincpu.rb@F775D=06</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 选择对地武器">
+    <parameter>
+      <item value="0x00">短距离</item>
+      <item value="0x01">长距离</item>
+      <item value="0x02">爆弹</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.rb@F7729=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 最大对地武器火力">
+    <script state="run">
+      <action>maincpu.rb@F772B=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 选择副武器">
+    <parameter>
+      <item value="0x00">没有</item>
+      <item value="0x01">直弹</item>
+      <item value="0x02">导弹</item>
+      <item value="0x03">跟踪</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.rb@F7725=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 最大副武器火力">
+    <script state="run">
+      <action>maincpu.rb@F7727=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.rb@F7B51=0A</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌">
+    <comment>在战机出现在画面后启用此作弊。如遇到问题，请在关卡结束时将其关闭</comment>
+    <script state="run">
+      <action>maincpu.rb@F7B49=03</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 最大对空武器火力">
+    <script state="run">
+      <action>maincpu.rb@F7B5D=06</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 选择对地武器">
+    <parameter>
+      <item value="0x00">短距离</item>
+      <item value="0x01">长距离</item>
+      <item value="0x02">爆弹</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.rb@F7B29=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 最大对地武器火力">
+    <script state="run">
+      <action>maincpu.rb@F7B2B=02</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 选择副武器">
+    <parameter>
+      <item value="0x00">没有</item>
+      <item value="0x01">直射</item>
+      <item value="0x02">导弹</item>
+      <item value="0x03">跟踪</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.rb@F7B25=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 最大副武器火力">
+    <script state="run">
+      <action>maincpu.rb@F7B27=02</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
