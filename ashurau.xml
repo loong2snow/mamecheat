@@ -1,0 +1,138 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.pb@600859=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无敌">
+    <script state="on">
+      <action>temp0=maincpu.mw@2A36</action>
+    </script>
+    <script state="run">
+      <action>maincpu.mw@2A36=6648</action>
+    </script>
+    <script state="off">
+      <action>maincpu.mw@2A36=temp0</action>
+    </script>
+  </cheat>
+  
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@6019EF=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌[闪烁]">
+    <script state="run">
+      <action>maincpu.pb@6008BF=00</action>
+      <action>maincpu.pb@6008C7=EE</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@6019F3=0A</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 炸弹选择">
+    <parameter>
+      <item value="0x00">阿修罗炸弹</item>
+      <item value="0x01">火焰波</item>
+      <item value="0x02">阿修罗闪光</item>
+      <item value="0x03">强力光束</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@60092F=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 总有最大火力">
+    <script state="run">
+      <action>maincpu.pb@600933=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 武器选择">
+    <parameter>
+      <item value="0x00">红色</item>
+      <item value="0x01">绿色</item>
+      <item value="0x02">蓝色</item>
+      <item value="0x03">黄色</item>
+      <item value="0x04">特殊</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@60092B=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 连发射击"> <comment>在炸弹选择界面或名字输入界面时，将其关闭</comment>
+    <script state="run">
+      <action>maincpu.pb@60081D=FF</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.pb@6019F1=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌[闪烁]">
+    <script state="run">
+      <action>maincpu.pb@6008FF=00</action>
+      <action>maincpu.pb@600907=EE</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@6019F5=0A</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 炸弹选择">
+    <parameter>
+      <item value="0x00">阿修罗炸弹</item>
+      <item value="0x01">火焰波</item>
+      <item value="0x02">阿修罗闪光</item>
+      <item value="0x03">强力光束</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@600931=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 总有最大火力">
+    <script state="run">
+      <action>maincpu.pb@600935=07</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 武器选择">
+    <parameter>
+      <item value="0x00">红色</item>
+      <item value="0x01">绿色</item>
+      <item value="0x02">蓝色</item>
+      <item value="0x03">黄色</item>
+      <item value="0x04">特殊</item>
+    </parameter>
+    <script state="run">
+      <action>maincpu.pb@60092D=param</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 连发射击"> <comment>在炸弹选择界面或名字输入界面时，将其关闭</comment>
+    <script state="run">
+      <action>maincpu.pb@60081F=FF</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
