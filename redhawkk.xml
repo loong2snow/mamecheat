@@ -1,0 +1,122 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.rb@C0021=63</action>
+    </script>
+  </cheat>
+
+  <cheat desc="选择开始关卡">
+    <parameter min="1" max="8" step="1"/>
+    <script state="run">
+      <action condition="(maincpu.rb@C06C1==00)">maincpu.rb@C06C1=(param-1)</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限生命"> <comment>不要在标题画面启用此作弊，否则将无法开始游戏</comment>
+    <script state="run">
+      <action>maincpu.rb@C024B=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.rb@C0263=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 无敌">
+    <script state="run">
+      <action>maincpu.rw@CB3DE=0004</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 最大火力">
+    <script state="run">
+      <action>maincpu.rb@CB3D5=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 武器选择">
+    <parameter min="0" max="3" step="1"/>
+    <script state="run">
+      <action>maincpu.rb@CB3D3=(param)</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 始终使用蓄力攻击">
+    <script state="run">
+      <action>maincpu.rw@C028C=0100</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 锁定能量蓄力">
+    <script state="run">
+      <action>maincpu.rw@C028C=0000</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 连发射击"> <comment>按住射击键。建议与 能量蓄力锁定 作弊一起使用，以获得更舒适的游戏体验.</comment>
+    <script state="run">
+      <action>maincpu.rb@C0011=10|(maincpu.rb@C0011 BAND ~10)</action>
+      <action>maincpu.rb@C02AB=00</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命"> <comment>不要在标题画面启用此作弊，否则将无法开始双人游戏</comment>
+    <script state="run">
+      <action>maincpu.rb@C024D=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无限炸弹">
+    <script state="run">
+      <action>maincpu.rb@C0265=05</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 无敌">
+    <script state="run">
+      <action>maincpu.rw@CBBDE=0004</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 最大火力">
+    <script state="run">
+      <action>maincpu.rb@CBBD5=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 武器选择">
+    <parameter min="0" max="3" step="1"/>
+    <script state="run">
+      <action>maincpu.rb@CBBD3=(param)</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 始终使用蓄力攻击">
+    <script state="run">
+      <action>maincpu.rw@C028E=0100</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 锁定能量蓄力">
+    <script state="run">
+      <action>maincpu.rw@C028E=0000</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 连发射击"> <comment>按住射击键。建议与 能量蓄力锁定 作弊一起使用，以获得更舒适的游戏体验.</comment>
+    <script state="run">
+      <action>maincpu.rb@C0010=10|(maincpu.rb@C0010 BAND ~10)</action>
+      <action>maincpu.rb@C02AD=00</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
