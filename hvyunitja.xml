@@ -1,0 +1,23 @@
+<mamecheat version="1">
+
+  <cheat desc="无敌">
+    <script state="on">
+      <action>temp0 =maincpu.mb@27E6</action>
+    </script>
+    <script state="run">
+      <action>maincpu.mb@27E6=C9</action>
+    </script>
+    <script state="off">
+      <action>maincpu.mb@27E6=temp0</action>
+    </script>
+  </cheat>
+
+  <cheat desc="连发射击">
+    <script state="run">
+      <action>maincpu.pb@D91D=00</action>
+      <action>maincpu.pb@D91F=00</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
