@@ -1,0 +1,57 @@
+<mamecheat version="1">
+
+  <cheat desc="无限投币">
+    <script state="run">
+      <action>maincpu.pb@004001=09</action>
+    </script>
+  </cheat>
+
+  <cheat desc="无敌">
+    <script state="on">
+      <action>temp0 =mainrom.mw@3F7102</action>
+      <action>temp1 =mainrom.mb@3FB283</action>
+      <action>temp2 =mainrom.mb@3FBA47</action>
+    </script>
+    <script state="run">
+      <action>mainrom.mw@3F7102=B507</action>
+      <action>mainrom.mb@3FB283=AD</action> <!-- 1st = Scenery, 2nd = Enemy -->
+      <action>mainrom.mb@3FBA47=20</action> <!-- Fire -->
+    </script>
+    <script state="off">
+      <action>mainrom.mw@3F7102=temp0 </action>
+      <action>mainrom.mb@3FB283=temp1 </action>
+      <action>mainrom.mb@3FBA47=temp2 </action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@00431F=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P1 连发射击">
+    <script state="run">
+      <action>maincpu.pb@004310=00</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+
+  <cheat desc="P2 无限生命">
+    <script state="run">
+      <action>maincpu.pb@00435F=04</action>
+    </script>
+  </cheat>
+
+  <cheat desc="P2 连发射击">
+    <script state="run">
+      <action>maincpu.pb@004350=00</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
