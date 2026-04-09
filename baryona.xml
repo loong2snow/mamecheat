@@ -1,0 +1,88 @@
+<mamecheat version="1">
+
+  <cheat desc="无限生命">
+    <script state="on">
+      <action>temp0 =maincpu.rw@00BDE2</action>
+    </script>
+    <script state="run">
+      <action>maincpu.rw@00BDE2=4A6D</action>
+    </script>
+    <script state="off">
+      <action>maincpu.rw@00BDE2=temp0 </action>
+    </script>
+  </cheat>
+
+  <cheat desc="无限炸弹">
+    <script state="on">
+      <action>temp0 =maincpu.rw@00D57C</action>
+    </script>
+    <script state="run">
+      <action>maincpu.rw@00D57C=4A6D</action>
+    </script>
+    <script state="off">
+      <action>maincpu.rw@00D57C=temp0 </action>
+    </script>
+  </cheat>
+  
+  <cheat desc="无敌">
+    <comment>开启游戏启动后或标题画面,P2中途加入无敌会闪</comment>
+    <script state="on">
+      <action>temp0 =maincpu.mw@00B6FE</action>
+    </script>
+    <script state="run">
+      <action condition="maincpu.pb@FE46E7 EQ 0">maincpu.mw@00B6FE=6600</action>
+	  <action condition="maincpu.pb@FE46E7 GT 0">maincpu.mw@00B6FE=temp0</action>
+    </script>
+    <script state="off">
+      <action>maincpu.mw@00B6FE=temp0 </action>
+    </script>
+  </cheat>
+  
+  <cheat desc=" "/>
+  
+  <!--
+  <cheat desc="P1 无限生命">
+    <script state="run">
+      <action>maincpu.pb@FE46F1=03</action>
+    </script>
+  </cheat>
+  
+  <cheat desc="P1 无限炸弹">
+    <script state="run">
+      <action>maincpu.pb@FE46EF=03</action>
+    </script>
+  </cheat>
+   
+  <cheat desc="P1 无敌">
+    <script state="run">
+      <action>maincpu.pb@FE46E7=F7</action>
+    </script>
+  </cheat>
+  -->
+  <cheat desc="P1 连发射击">
+    <comment>建议使用MAME连射插件</comment>
+    <script state="run">
+      <action>maincpu.pb@FE3194=00|(maincpu.pb@FE3194 BAND ~08)</action>
+    </script>
+  </cheat>
+
+  <cheat desc=" "/>
+  
+  <!--
+  <cheat desc="P2 无敌">
+    <script state="run">
+      <action>maincpu.pb@FE4799=F7</action>
+    </script>
+  </cheat>
+  -->
+  
+  <cheat desc="P2 连发射击">
+    <comment>建议使用MAME连射插件</comment>
+    <script state="run">
+      <action>maincpu.pb@FE3195=00|(maincpu.pb@FE3195 BAND ~08)</action>
+    </script>
+  </cheat>
+
+</mamecheat>
+<!-- Cheat file downloaded from https://www.mamecheat.co.uk, see cheat.txt for list of contributors. -->
+<!-- Cheat file updated, added, and corrected from https://www.nesbbs.com. -->
